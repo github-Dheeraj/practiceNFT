@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ensdomains/ensjs": "^3.0.0-alpha.2",
     "express": "^4.18.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "web3": "^1.7.4",
+    "web3-eth-ens": "^1.7.4"
   }
 }
