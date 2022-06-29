@@ -4,6 +4,10 @@ const path = require('path')
 const port = 5000
 App.use(express.static('public'))
 
+// "web3": "^1.7.4",
+//     "web3-eth-ens": "^1.7.4"
+//     "@ensdomains/ensjs": "^3.0.0-alpha.2",
+
 //const ethers = require('ethers');
 // const {ethereum} = window
 // var Web3 = require("web3")
