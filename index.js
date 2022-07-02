@@ -8,6 +8,7 @@ App.use(express.static('public'))
 let x = 0;
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/7cedc93bca594509a5abbaae985320a6')
 
+
 App.get('/metadata', async (req, res)=>{
     //console.log('req is defined',req)
     let query = req.query
@@ -43,5 +44,5 @@ App.get('/ens', async (req, res)=>{
 // })
 
 App.listen(process.env.PORT || port, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, App.settings.env);
+    console.log("Express server listening");
 });
