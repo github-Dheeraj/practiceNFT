@@ -37,6 +37,10 @@ App.get('/ens', async (req, res)=>{
     res.send(address)
 })
 
-App.listen(port, ()=>{
-    console.log('Server started');
-})
+// App.listen(port, ()=>{
+//     console.log('Server started');
+// })
+
+App.listen(process.env.PORT || port, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
